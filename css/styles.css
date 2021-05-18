@@ -210,14 +210,10 @@ img {
 }
 
 .icon-envelope {
-  width: 16px;
-  height: 12px;
   fill: currentColor;
   margin-right: 10px;
 }
 .icon-smartphone {
-  width: 10px;
-  height: 16px;
   fill: currentColor;
   margin-right: 10px;
 }
@@ -445,12 +441,12 @@ img {
   justify-content: center;
   align-items: center;
 }
-
+/* 
 .social-icons-svg,
 .footer-social-icons-svg {
   width: 20px;
   height: 20px;
-}
+} */
 
 .social-icons-svg {
   fill: var(--icons-color);
