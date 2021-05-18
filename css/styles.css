@@ -13,6 +13,7 @@
 
   --border-header-box: #ececec;
   --icons-color: #afb1b8;
+  --footer-icons-color: #ffffff;
 
   --shadow-item-box: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -70,7 +71,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 3px solid tomato;
+  /* outline: 3px solid tomato; */
 }
 
 .list {
@@ -437,19 +438,30 @@ img {
   margin-bottom: 16px;
 }
 
+/* SOCIAL LINKS */
+
 .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.social-icons-svg {
+.social-icons-svg,
+.footer-social-icons-svg {
   width: 20px;
   height: 20px;
+}
+
+.social-icons-svg {
   fill: var(--icons-color);
 }
 
-.social-icons-link {
+.footer-social-icons-svg {
+  fill: var(--footer-icons-color);
+}
+
+.social-icons-link,
+.footer-social-icons-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -458,9 +470,33 @@ img {
   border-radius: 50%;
 }
 
+.social-icons-link {
+  background-color: #ffffff;
+}
+
+.footer-social-icons-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .social-icons-item:not(:last-child) {
   margin-right: 10px;
 }
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background: var(--accent-text-color);
+}
+
+.social-icons-link:hover .social-icons-svg,
+.social-icons-link:focus .social-icons-svg {
+  fill: var(--links-text-color);
+}
+
+.footer-social-icons-link:hover,
+.footer-social-icons-link:focus {
+  background: var(--accent-text-color);
+}
+
 /* ПОСТОЯННЫЕ КЛИЕНТЫ */
 
 .reg-customers {
@@ -590,18 +626,10 @@ address .item:not(:last-child) {
   color: var(--links-text-color);
   margin-bottom: 20px;
 }
-
+/* 
 .footer-social-list {
   display: flex;
-}
-
-.social-network {
-  outline: 3px solid red;
-}
-
-.color {
-  color: var(--links-text-color);
-}
+} */
 
 /* ^^^^^^^^^^^^^^^^^ПОСТОЯННЫЕ КЛИЕНТЫ +++ СОЦСЕТИ - end *********************** */
 
